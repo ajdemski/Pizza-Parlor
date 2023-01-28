@@ -1,12 +1,30 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-US">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pizza Parlor</title>
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
+    <script src="js/scripts.js"></script>
 </head>
 <body>
-    
+    <div class="container">
+        <h1>Aaron's Pizza Parlor</h1>
+        <p1>Welcome to my Pizza Parlor! Insert toppings and a size to get a price back.</p1>
+        <form id="pizzaMaker"
+            <div class="form-group">
+                <h2>Pizza Maker</h2>
+                <label for="toppings">Cheese, Pepperoni, Artichoke, Anchovy:</label>
+                <input type="text" id="toppings" name="toppings">
+                <label for="size">Small, Medium, Large:</label>
+                <input type="text" id="size" name="size">
+                <button type="submit" class="btn">Order</button>
+            </div>
+        </form>
+        <p>Price</p>
+        <p id="orderDetails"></p>
+        <p id="priceDetails"></p>
+    </div>
 </body>
 </html>
