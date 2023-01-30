@@ -31,41 +31,6 @@ Test 1: "It should return a Pizza object with two properties for toppings and si
 Code: const myPizza = new Pizza(["anchovies", "pineapple"], "medium");
 Expected Output: Pizza { toppings: ["anchovies", "pineapple"], size: "medium" }
 
-<!-- New function -->
-Describe GameBoard()
-
-Test 1: ""
-Code: 
-let gameboard = new GameBoard();
-gameboard.players.player1 = ("erin");
-gameboard.players;
-gameboard.players.player2 = ("vera")
-gameboard.players;
-Expected Output: player1 = ("erin"), player2 = ("vera");
-
-<!-- New function -->
-Describe Player()
-
-Test 1: "It should add 2 players to the board constructor object."
-Code: let newPlayers = new Player("erin", "timlin");
-Expected Output: newPlayers = {player1: erin, player2: timlin}
-
-<!-- New function -->
-Describe Gameboard.prototype.score();
-
-Test 1: "It should roll the die and create a score."
-Code: let gameboard = new GameBoard();
-gameboard.score();
-Expected Outcome: random number between 1 and 6. 
-
-<!-- New function -->
-Describe Gameboard.prototype.playerTurn();
-
-Test 1: "It should return the score created in Gameboard.prototype.score()."
-Code: let gameboard = new GameBoard();
-gameboard.playerTurn();
-Expected Outcome: random number between 1 and 6. 
-
 
 ## Known Bugs
 

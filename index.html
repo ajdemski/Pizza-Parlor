@@ -15,16 +15,35 @@
         <form id="pizzaMaker"
             <div class="form-group">
                 <h2>Pizza Maker</h2>
-                <label for="toppings">Cheese, Pepperoni, Artichoke, Anchovy:</label>
-                <input type="text" id="toppings" name="toppings">
-                <label for="size">Small, Medium, Large:</label>
-                <input type="text" id="size" name="size">
-                <button type="submit" class="btn">Order</button>
+                <div class="toppinglist">
+                    <label for="cheese">Cheese</label>
+                        <input type="checkbox" value="Cheese">
+                    <label for="Pepperoni">Pepperoni
+                        <input type="checkbox" value="Peperoni">
+                    <label for="Artichoke">Artichoke
+                        <input type="checkbox" value="Artichoke">
+                    <label for="Anchovy">Anchovy
+                        <input type="checkbox" value="Anchovy">
+                    </label>
+                    </label>
+                    </label>
+                    </label>
+                    </select>
+                </div>
             </div>
-        </form>
-        <p>Price</p>
-        <p id="orderDetails"></p>
-        <p id="priceDetails"></p>
+                <div class="sizesList">
+                    <label for="sizesList">Sizes</label>
+                    <select name="allSizes" id="allSizes">
+                        <option value="small">Small</option>
+                        <option value="medium">Medium</option>
+                        <option value="large">Large</option>
+                    </select>
+                </div>
+                <button type="submit" class="btn">Order</button>
+            </form>
+        <div class="hidden" id="output">
+            <p>Total: <span id="price"></span></p>
+        </div>
     </div>
 </body>
 </html>
